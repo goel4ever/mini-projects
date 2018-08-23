@@ -3,23 +3,25 @@ const path = require('path');
 const axios = require('axios');
 const app = express();
 
-//const API_URL = 'http://api.fixer.io';
-const API_URL = 'https://api.exchangeratesapi.io';
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.sendFile('index.html', {
     root: path.join(__dirname, 'views')
   });
 });
-app.get('/rate/:date', (req, res) => {
-  const date = req.params.date;
-  const url = `${API_URL}/${date}?base=USD`;
-  axios.get(url).then(response => {
-    return res.json({ rates: response.data.rates });
-  }).catch(error => {
-    console.log(error);
-  });
 
+app.get('/userInfo', (req, res) => {
+  const USER_NAME = 'kentcdodds';
+  const API_URL = `https://api.github.com/users/${USER_NAME}`;
+
+  axios.get(API_URL)
+    .then((response) => {
+      res.json(response.data);
+    })
+    .catch((error) => {
+      res.json(error);
+    });
 });
 
 const port = process.env.port || 5000;

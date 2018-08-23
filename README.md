@@ -6,6 +6,6 @@ Small quick utils
 ### Currency Converter
 Bring up the server by running the following command
 
-```node currency-converter/server.js```
+```npm start```
 
 ### GitHub Summary
