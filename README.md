@@ -3,5 +3,9 @@ Small quick utils
 
 ## Projects
 
-* Currency Coverter
-* GitHub Summary
+### Currency Converter
+Bring up the server by running the following command
+
+```node currency-converter/server.js```
+
+### GitHub Summary
