@@ -5,6 +5,7 @@ const app = express();
 
 //const API_URL = 'http://api.fixer.io';
 const API_URL = 'https://api.exchangeratesapi.io';
+// const ANOTHER_RESOURCE_URL = 'http://free.currencyconverterapi.com/api/v5/convert?q=USD_INR&compact=y';
 
 app.get('/', (req, res) => {
   res.sendFile('index.html', {
