@@ -1,0 +1,27 @@
+{
+  "name": "node-typescript-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc ./src/index.ts",
+    "start": "node --inspect dist/",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "tsc": "tsc",
+    "lint": "eslint src --ext ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.11.4",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "typescript": "^3.1.1",
+    "typescript-eslint-parser": "^19.0.2"
+  }
+}
