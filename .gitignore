@@ -1,3 +1,7 @@
+# Application
 node_modules/
 *.log
 .env
+
+# Editor
+.idea

@@ -5,6 +5,13 @@ const app = express();
 
 app.use(express.static(__dirname + '/public'));
 
+// TODO: CHECK IF THIS IS REALLY NEEDED
+// App Engine terminates the HTTPS connection at the load balancer and forwards the request to your application.
+// Some applications need to determine the original request IP and protocol.
+// The user's IP address is available in the standard X-Forwarded-For header.
+// Applications that require this information should configure their web framework to trust the proxy.
+app.set('trust proxy', true);
+
 app.get('/', (req, res) => {
   res.sendFile('index.html', {
     root: path.join(__dirname, 'views')
