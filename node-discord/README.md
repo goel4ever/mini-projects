@@ -1,5 +1,7 @@
 # Discord Bot
 
+**[More work needed]**
+
 ## Source code
 
 * https://glitch.com/edit/#!/historical-professor

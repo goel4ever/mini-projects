@@ -3,6 +3,8 @@ Send SMS messages using your own SMSC gateway.
 
 ** Does not work right now. SMPP package needs to be updated **
 
+**[More work needed]**
+
 ## SMPP
 SMPP (Short Message Peer-to-Peer) is a protocol used by the telecommunications industry. It exchanges SMS messages between (SMSC) and ESME. SMSC acts as middleman to store the message and route it. ESME is the system that delivers SMS to SMSC.
 
