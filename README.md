@@ -33,5 +33,11 @@ API to send SMS to someone
 ### Quote Generator
 API to return random quotes out of a list of pre-loaded quotes
 
+### Demo - TCP
+Demo code to showcase TCP implementation in Node.js
+
+### Demo - TLS
+Demo code to showcase TLS implementation in Node.js
+
 ### Weather Tracker
 API to return weather information pull from a third-party service api.
