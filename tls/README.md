@@ -5,3 +5,4 @@ The TLS module provides an implementation of the Transport Layer Security (TLS) 
 
 ### References
 * https://medium.com/@krissanawat/what-is-tls-socket-server-and-client-for-nodejs-e4cfab31bbd3
+* https://riptutorial.com/node-js/example/12004/ssl-tls-in-node-js
